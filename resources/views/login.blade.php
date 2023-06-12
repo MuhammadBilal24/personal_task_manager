@@ -19,7 +19,7 @@
     <div class="col-lg-5 col-12">
         <div id="auth-left">
             <div class="auth-logo">
-                <a href="index.html"><center><img style="width:200px;height:50px" src="assets/images/logo.png" alt="Logo"></center></a>
+                <a href="index.html"><center><img style="width:210px;height:70px" src="assets/images/logo.png" alt="Logo"></center></a>
             </div>
             <h3 class="" style="margin-top:-100px">Log in.</h3>
             <!-- <h1 class="auth-title">Log in.</h1> -->
