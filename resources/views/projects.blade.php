@@ -1,4 +1,4 @@
-<title>Projects - Personal Task Manger </title>
+<title>Projects - Personal Task Manager </title>
 @include('header')
 <div id="main-content"> 
     <div class="page-heading">

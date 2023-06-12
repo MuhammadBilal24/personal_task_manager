@@ -1,4 +1,4 @@
-<title>Task Details - Personal Task Manger </title>
+<title>Task Details - Personal Task Manager </title>
 
 @include('header')
 <div id="main-content"> 

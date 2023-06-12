@@ -1,4 +1,4 @@
-<title>Social Accounts - Personal Task Manger </title>
+<title>Social Accounts - Personal Task Manager </title>
 @include('header')
 <div id="main-content"> 
     <div class="page-heading">
