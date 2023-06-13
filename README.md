@@ -1,3 +1,9 @@
+<table>
+  <tr>
+    <td><a href="https://stars.github.com/profiles/muhammadbilal12/"><img src="https://github.com/MuhammadBilal24/MuhammadBilal24/blob/main/1.png" /></a></td>
+    <td><a href="https://stars.github.com/profiles/muhammadbilal12/"><img src="https://github.com/MuhammadBilal24/MuhammadBilal24/blob/main/2.png" /></a></td>
+  </tr>
+</table>
 # Personal_Task_Manager
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
