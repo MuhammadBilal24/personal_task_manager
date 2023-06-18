@@ -161,8 +161,9 @@ class DashboardController extends Controller
     // Project Details
     public function projectdetails(request $request)
     {
+        
         $projectdata= DB:: table('projects')->where(['projects.id_proj'=>$request->projectID])->get();
-        $projectdetailsdata= DB:: table('projectdetails')->get();
+        $projectdetailsdata= DB:: table('projectdetails')->where(['id_proj'=>$request->projectID])->get();
         // return $projectdata;
         return view('projectdetails',['projectdata'=>$projectdata, 'projectdetailsdata'=>$projectdetailsdata]);
     }
