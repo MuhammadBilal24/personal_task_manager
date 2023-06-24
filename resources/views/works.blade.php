@@ -26,6 +26,7 @@
                         <tbody>
                            @foreach($myworkdata as $value)
                             <tr>
+                              
                                 <td>{{$value->id_work}}</td>
                                 <td>{{$value->title}}</td>
                                 <td class="text-center">{{$value->subject}}</td>
