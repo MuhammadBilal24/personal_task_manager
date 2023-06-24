@@ -293,14 +293,15 @@
                 </div>
                 <div class="col-12 col-lg-3">
                     <div class="card">
-                        <div class="card-body py-4 px-5">
+                        <div class="card-body py-4">
                             <div class="d-flex align-items-center">
-                                <div class="avatar avatar-xl">
+                                <!-- <div class="avatar avatar-xl">
                                     <img src="{{asset('assets/images/fvcon.png')}}" alt="Face 1">
-                                </div>
-                                <div class="ms-3 name">
-                                    <h5 class="font-bold">{{$data->name}}</h5>
-                                    <h6 class="text-muted mb-0">@BilaelDevelops</h6>
+                                </div>  -->
+                                 <div class="name">
+                                    <!-- <h5 class="font-bold">{{$data->name}}</h5> -->
+                                    <!-- <h6 class="text-muted mb-0">@Bilael Develops</h6> -->
+                                    <h6 class="" style=""><img src="{{asset('assets/images/stamp.png')}}" alt="Face 1" style="width:250px; height:70px;margin-top:0px" ></h6>
                                 </div>
                             </div>
                         </div>

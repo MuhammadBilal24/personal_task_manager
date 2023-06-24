@@ -427,9 +427,9 @@
             </div>
         </div>
 
-        <div id="main" class='layout-navbar'>
-        <!-- style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);"
-           background: linear-gradient(to left, #0099ff 0%, #ff99cc 70%); -->
+        <div id="main" class='layout-navbar' style=" background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+            <!--background: linear-gradient(to left, #0099ff 0%, #ff99cc 70%);  
+           background: linear-gradient(90deg, rgba(157,157,157,1) 0%, rgba(195,196,199,1) 13%); -->
             <header class='mb-3'>
                 <nav class="navbar navbar-expand navbar-light " style="background: linear-gradient(to top left, #435ebe 0%, #435ebe 70%);">
                     <div class="container-fluid">
