@@ -51,7 +51,8 @@
                                     </button>
                                     <button type="button" onclick="DeleteDatafromDB('{{$value->id_remain}}')" data-id="{{$value->id_remain}}" class="btn btn-danger">
                                         Delete</button>
-                                    <a href="/works/{{$value->id_remain}}"><button class="btn btn-info">Details</button></a>
+                                    <!-- <a href="/works/{{$value->id_remain}}"> -->
+                                      <!-- <button class="btn btn-info">Details</button></a> -->
                                 </td>
                             </tr>
                          @endforeach   
