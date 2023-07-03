@@ -59,6 +59,9 @@ Route::post('/edit/notepaddata',[DashboardController::class,'updatenotepad']);
 // Users
 Route::get('/users',[DashboardController::class,'users']);
 
+// profile
+Route::get('/profile',[DashboardController::class,'getprofile']);
+
 // --------------------------------- Api
 // Works
 Route::get('/api/getdata/{id_work}',[DashboardController::class,'getworkdata']); 
@@ -81,3 +84,4 @@ Route::get('/api/accountgetdata/{id_sac}',[DashboardController::class,'getsocial
 // Notepad
 Route::get('/api/notepadgetdata/{id_note}',[DashboardController::class,'getnotepad']);
 Route::get('/api/notepadDeletedata/{id_note}',[DashboardController::class,'deletenotepad']);
+

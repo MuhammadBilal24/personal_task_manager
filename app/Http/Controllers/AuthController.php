@@ -82,10 +82,11 @@ class AuthController extends Controller
         ->join('myworks', 'myworks.id_work', '=', 'remainwork.id_work')
         ->where(['remainwork.status_remain'=>'1'])
         ->get();
+        $onaccounts= DB::table('socialaccounts')->where(['status_sac'=>'1'])->get();
         $activeaccounts= DB::table('socialaccounts')->where(['status_sac'=>'3'])->get();
         $activeprojects= DB::table('projects')->where(['status_proj'=>'1'])->get();
         return view('dashboard',  ['myworkdata' => $myworkdata,'remainworkdata'=>$remainworkdata,'mynotepaddata'=>$mynotepaddata,
-                                        'workingtasks'=>$workingtasks,'activeaccounts'=>$activeaccounts, 'activeprojects'=>$activeprojects, 'data'=>$data
+                                        'workingtasks'=>$workingtasks,'activeaccounts'=>$activeaccounts,'onaccounts'=>$onaccounts, 'activeprojects'=>$activeprojects, 'data'=>$data
                                             ,'noticeboard'=>$noticeboard]);
     }
     public function logoutuser()

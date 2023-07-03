@@ -268,4 +268,8 @@ class DashboardController extends Controller
         $usersdata=DB::table('users')->get();
         return view('users',['usersdata'=>$usersdata]);
     }
+    public function getprofile()
+    {
+        return view('profile');
+    }
 }

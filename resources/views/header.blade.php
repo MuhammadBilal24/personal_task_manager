@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/simple-datatables/style.css')}}">
     
 </head>
-<body style="background-color:#F6F6EB;">
+<body style="background-color:#E9E9E9">
+    <!--  style="background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );" -->
     <div id="app">
-        <div id="sidebar" class="active"  >
+        <div id="sidebar" class="active"  > <!-- active -->
             <div class="sidebar-wrapper active"  style="background-color: white">
             <!-- #cce6ff -->
                 <div class="sidebar-header">
@@ -37,7 +38,6 @@
                 <div class="sidebar-menu">
                     <ul class="menu" >
                     <!-- <li class="sidebar-title">Menu</li> -->
-
                         <li class="sidebar-item active ">
                             <a href="/dashboard" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
@@ -63,18 +63,21 @@
                                 <span>Social Accounts</span>
                             </a>
                         </li>
+                        <li class="sidebar-title text-muted">Notice Board</li>
                         <li class="sidebar-item">
                             <a href="/notepad" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Notepad</span>
                             </a>
                         </li>
+                        <li class="sidebar-title text-muted">Authentications</li>
                         <li class="sidebar-item">
                             <a href="/users" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill"></i>
                                 <span>Users</span>
                             </a>
                         </li>
+                        
                     </ul>
 
                 </div>
@@ -142,7 +145,7 @@
                                     <li>
                                         <h6 class="dropdown-header">Hello, Admin!</h6>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-person me-2"></i> My
+                                    <li><a class="dropdown-item" href="/profile"><i class="icon-mid bi bi-person me-2"></i> My
                                             Profile</a></li>
                                     <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>
                                             Settings</a></li>

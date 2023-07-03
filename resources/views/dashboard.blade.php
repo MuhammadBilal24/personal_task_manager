@@ -189,7 +189,10 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h4>Notice Board
-                                    <button class="btn btn-success" id="updated" style=" float:right">Updated</button>
+                                    <div class="spinner-border text-success" id="updated" style=" float:right" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>  
+                                    <!-- <button class="btn btn-success" id="updated" style=" float:right">Updated</button> -->
                                     </h4>
                                 </div>
                                 <form action="/edit/notepaddata" method="POST" id="notice">
@@ -200,7 +203,7 @@
                                     <input type="hidden" name="id_note" id="id_note" value="{{$value->id_note}}" >
                                     <input type="hidden" name="title_note" id="title_note" value="{{$value->title_note}}" >
                                     <input type="hidden" name="status_note" id="status_note" value="{{$value->status_note}}" >
-                                    <textarea class="form-control" style="color:black" id="details_note" name="details_note" class="form-control" value="" rows="3">{{$value->details_note}}</textarea>
+                                    <textarea class="form-control" style="color:black" id="details_note" name="details_note" class="form-control" value="" rows="6">{{$value->details_note}}</textarea>
                                             <!-- <input type="text"  id="details_note" name="details_note" class="form-control" value="{{$value->details_note}}"> -->
                                     </div>
                                 @endforeach
@@ -296,12 +299,12 @@
                         <div class="card-body py-4">
                             <div class="d-flex align-items-center">
                                 <!-- <div class="avatar avatar-xl">
-                                    <img src="{{asset('assets/images/fvcon.png')}}" alt="Face 1">
+                                    <img src="assets/images/fvcon.png" alt="Face 1">
                                 </div>  -->
                                  <div class="name">
-                                    <!-- <h5 class="font-bold">{{$data->name}}</h5> -->
+                                 <!-- <h5 class="font-bold">{{$data->name}}</h5> -->
                                     <!-- <h6 class="text-muted mb-0">@Bilael Develops</h6> -->
-                                    <h6 class="" style=""><img src="{{asset('assets/images/stamp.png')}}" alt="Face 1" style="width:250px; height:70px;margin-top:0px" ></h6>
+                                    <h6 class="" style=""><img src="assets/images/stamp.png" alt="Face 1" style="width:250px; height:70px;margin-top:0px" ></h6>
                                 </div>
                             </div>
                         </div>
@@ -329,6 +332,29 @@
                     </div>
                     <div class="card">
                         <div class="card-header">
+                            <h4>Active Accounts</h4>
+                            <!-- <button style="background-color:#ff7976;border:none">Social Accounts</button> -->
+                        </div>
+                        <div class="card-content pb-4">
+                            @foreach($onaccounts as $value)
+                            <div class="recent-message d-flex px-4 py-3">
+                                <div class="avatar avatar-lg">
+                                    <!-- <img src="assets/images/faces/4.jpg"> -->
+                                </div>
+                                <div class="name" style="width:90%">
+                                    <a href="{{$value->link_sac}}" target="_blank"><span style="color:black">{{$loop->iteration}}- </span>  {{$value->title_sac}}</a>
+                                    <!-- <h5 class="mb-1">{{$value->link_sac}}</h5> -->
+                                    <!-- <h6 class="text-muted mb-0" style=""></h6> -->
+                                </div>
+                            </div>
+                            @endforeach
+                            <div class="px-4">
+                                <!-- <a href="/accounts"><button class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>Accounts</button></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
                             <h4>Updated Accounts</h4>
                             <!-- <button style="background-color:#ff7976;border:none">Social Accounts</button> -->
                         </div>
@@ -338,7 +364,7 @@
                                 <div class="avatar avatar-lg">
                                     <!-- <img src="assets/images/faces/4.jpg"> -->
                                 </div>
-                                <div class="name ms-4" style="width:90%">
+                                <div class="name" style="width:90%">
                                     <a href="{{$value->link_sac}}" target="_blank"><span style="color:black">{{$loop->iteration}}- </span>  {{$value->title_sac}}</a>
                                     <!-- <h5 class="mb-1">{{$value->link_sac}}</h5> -->
                                     <!-- <h6 class="text-muted mb-0" style=""></h6> -->
@@ -346,7 +372,7 @@
                             </div>
                             @endforeach
                             <div class="px-4">
-                                <a href="/accounts"><button class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>Accounts</button></a>
+                                <!-- <a href="/accounts"><button class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>Accounts</button></a> -->
                             </div>
                         </div>
                     </div>
