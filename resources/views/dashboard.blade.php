@@ -265,8 +265,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                
-                                                    @foreach($myworkdata as $value)
+                                                @foreach($myworkdata as $value)
                                                     <tr>
                                                     <td class="col-4">
                                                         <div class="d-flex align-items-center">
@@ -275,17 +274,13 @@
                                                     </td>
                                                     <td class="col-auto">
                                                         <p class=" mb-0 text-center">@if ($value->status == '1')
-                                                                <span class="badge bg-success">Active</span>
-                                                            @elseif($value->status == '2')
-                                                                <span class="badge bg-info">Slow Down</span>                                
+                                                                <span class="badge bg-success">Active</span>                                
                                                             @else
                                                                 <span class="badge bg-danger">Deactive</span>                                
                                                             @endif</p>
                                                     </td>
                                                     </tr>
                                                     @endforeach
-                                                
-                                               
                                             </tbody>
                                         </table>
                                     </div>
